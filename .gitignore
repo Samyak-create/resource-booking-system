@@ -1,0 +1,10 @@
+.metadata/
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore build files
+target/
+node_modules/
