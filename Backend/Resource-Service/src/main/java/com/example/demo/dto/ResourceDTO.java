@@ -9,5 +9,5 @@ public class ResourceDTO {
 	
 	private String name;
 	
-	private  int  avalilableQuantity; 
+	private  int  availableQuantity; 
 }

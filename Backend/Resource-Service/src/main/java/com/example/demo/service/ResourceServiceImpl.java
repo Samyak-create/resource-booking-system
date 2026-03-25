@@ -22,9 +22,9 @@ public class ResourceServiceImpl implements ResourceService {
 		Resource res=new Resource();
 		
 		res.setName(resDto.getName());
-		res.setAvailableQuantity(resDto.getAvalilableQuantity());
+		res.setAvailableQuantity(resDto.getAvailableQuantity());
 		
-		res.setTotalQuantity(resDto.getAvalilableQuantity());
+		res.setTotalQuantity(resDto.getAvailableQuantity());
 		
 		repo.save(res);
 		return "Resource Addedd Succesfully";
@@ -52,7 +52,7 @@ public class ResourceServiceImpl implements ResourceService {
 		      ResourceDTO dto=new ResourceDTO();
 		      dto.setId(res.getId());
 		      dto.setName(res.getName());
-		      dto.setAvalilableQuantity(res.getAvailableQuantity());
+		      dto.setAvailableQuantity(res.getAvailableQuantity());
 		      
 		
 	return 	dto;
@@ -79,7 +79,7 @@ public class ResourceServiceImpl implements ResourceService {
 			ResourceDTO dto=new ResourceDTO();
 			dto.setId(res.getId());
 			dto.setName(res.getName());
-			dto.setAvalilableQuantity(res.getAvailableQuantity());
+			dto.setAvailableQuantity(res.getAvailableQuantity());
 			
 			dtoList.add(dto);
 		}

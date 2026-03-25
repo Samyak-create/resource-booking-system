@@ -6,14 +6,15 @@ import static org.mockito.Mockito.*;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;-
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.repo.ResourceRepo;
-import com.example.demo.service.ResourceServiceImpl;
 
+@ExtendWith(MockitoExtension.class)
 public class ResourceServiceTest {
 
     @Mock
@@ -21,10 +22,6 @@ public class ResourceServiceTest {
 
     @InjectMocks
     private ResourceServiceImpl service;
-
-    public ResourceServiceTest() {
-        MockitoAnnotations.openMocks(this); // ✅ FIXED
-    }
 
     @Test
     void shouldThrowExceptionWhenResourceNotFound() {
