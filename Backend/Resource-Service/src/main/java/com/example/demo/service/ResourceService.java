@@ -2,21 +2,24 @@ package com.example.demo.service;
 
 import java.util.List;
 
+import com.example.demo.dto.ResourceDTO;
 import com.example.demo.entities.Resource;
 
 public interface ResourceService {
 	
-	List<Resource> getAllResources();
+	List<ResourceDTO> getAllResources();
 	
-	String addResource(Resource res);
+	String addResource(ResourceDTO res);
 	
-	String deleteResource(Resource res);
+	String deleteResource(int id);
 	
-    List<Resource> availableResource();
     
-    String updateResource(int id );
     
-    Resource findByName(String name);
+   
     
-    Resource findById(int id);
+    ResourceDTO findByName(String name);
+
+	Resource findById(int id);
+    
+   
 }

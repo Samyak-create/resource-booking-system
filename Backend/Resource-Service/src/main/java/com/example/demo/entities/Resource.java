@@ -21,7 +21,7 @@ public class Resource {
     
 	private String name;
 	
-	private boolean booked;
+	
 	
 	private int totalQuantity;
 	
