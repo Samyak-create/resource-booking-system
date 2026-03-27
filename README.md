@@ -1,4 +1,4 @@
-# Grind - Resource Booking System
+# Resource Booking System
 
 A comprehensive Full-Stack application designed for managing resources and internal bookings. The system offers standard access for regular users to view and book resources, as well as an Admin platform designed for administrative oversight, resource insertion, and removal. 
 
